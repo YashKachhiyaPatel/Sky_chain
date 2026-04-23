@@ -1,56 +1,147 @@
-<!-- ======================= index.html ======================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sky Chain Enterprise</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Sky Chain Enterprise delivers modern logistics, infrastructure, and supply chain solutions for ambitious global businesses.">
+  <title>Sky Chain Enterprise | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header" id="navbar">
-  <div class="container nav-container">
-    <h1 class="logo">Sky Chain</h1>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav id="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="team.html">Team</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero-section">
-  <div class="overlay">
-    <h2>Global Business Solutions</h2>
-    <p>We connect innovation, logistics, and growth worldwide.</p>
-    <a href="contact.html" class="btn">Get Started</a>
-  </div>
-</section>
-
-<section class="services container reveal">
-  <h2>Our Services</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Logistics</h3>
-      <p>Efficient global supply chain solutions.</p>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">SC</span>
+        <span class="brand-text">
+          <strong>Sky Chain</strong>
+          <span>Enterprise</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <div class="card">
-      <h3>Consulting</h3>
-      <p>Strategic business growth planning.</p>
-    </div>
-    <div class="card">
-      <h3>Expansion</h3>
-      <p>Helping businesses scale globally.</p>
-    </div>
-  </div>
-</section>
+  </header>
 
-<footer>
-  <p>© 2026 Sky Chain Enterprise</p>
-</footer>
-<script src="script.js"></script>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Global logistics. Intelligent growth.</p>
+          <h1>Building resilient supply chains for a faster world.</h1>
+          <p class="lead">
+            Sky Chain Enterprise helps organizations move products, data, and operations with precision through integrated logistics strategy, execution, and long-term transformation.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="contact.html">Start a Project</a>
+            <a class="button button-secondary" href="about.html">Learn More</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>24/7</strong><span>Operational support</span></li>
+            <li><strong>40+</strong><span>Regional partners</span></li>
+            <li><strong>99.2%</strong><span>Delivery accuracy</span></li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <div class="info-panel glass">
+            <p class="panel-label">Enterprise Network</p>
+            <h2>Connected systems, visible performance.</h2>
+            <div class="metric-grid">
+              <article>
+                <span>Freight Visibility</span>
+                <strong>Realtime</strong>
+              </article>
+              <article>
+                <span>Route Efficiency</span>
+                <strong>+31%</strong>
+              </article>
+              <article>
+                <span>Warehouse Sync</span>
+                <strong>Unified</strong>
+              </article>
+              <article>
+                <span>Risk Monitoring</span>
+                <strong>Active</strong>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">What we do</p>
+          <h2>Solutions designed for scale, speed, and trust.</h2>
+        </div>
+        <div class="card-grid">
+          <article class="feature-card">
+            <h3>Supply Chain Strategy</h3>
+            <p>We audit bottlenecks, redesign workflows, and align sourcing, warehousing, and transport into one clear operating model.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Logistics Execution</h3>
+            <p>From regional distribution to international delivery programs, we coordinate movement with operational discipline and visibility.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Digital Integration</h3>
+            <p>We connect reporting, planning, and communication tools so leadership teams can act on reliable data in real time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container split-grid">
+        <div>
+          <p class="eyebrow">Why Sky Chain</p>
+          <h2>A professional partner for complex operations.</h2>
+        </div>
+        <div class="bullet-panels">
+          <article class="bullet-panel">
+            <h3>Execution-first mindset</h3>
+            <p>Our teams stay focused on measurable outcomes, not presentation decks alone.</p>
+          </article>
+          <article class="bullet-panel">
+            <h3>Cross-border capability</h3>
+            <p>We support organizations operating across cities, regions, and international trade corridors.</p>
+          </article>
+          <article class="bullet-panel">
+            <h3>Leadership visibility</h3>
+            <p>Clear reporting and accountable communication keep decision-makers fully informed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <h3>Sky Chain Enterprise</h3>
+        <p>Professional supply chain and logistics solutions for modern businesses.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-

@@ -1,41 +1,102 @@
-<!-- ======================= contact.html ======================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Contact Sky Chain Enterprise to discuss logistics, supply chain, and operational transformation services.">
+  <title>Sky Chain Enterprise | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header" id="navbar">
-  <div class="container nav-container">
-    <h1 class="logo">Sky Chain</h1>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav id="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="team.html">Team</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">SC</span>
+        <span class="brand-text">
+          <strong>Sky Chain</strong>
+          <span>Enterprise</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="team.html">Team</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="container reveal">
-  <h2>Contact Us</h2>
-  <!-- Replace action URL with your Formspree endpoint -->
-  <form action="https://formspree.io/f/your-form-id" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s discuss your next logistics or operations project.</h1>
+        <p class="lead">Send us a message and we’ll follow up with the right team to support your business goals.</p>
+      </div>
+    </section>
 
-<footer>
-  <p>© 2026 Sky Chain Enterprise</p>
-</footer>
-<script src="script.js"></script>
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-panel">
+          <h2>Reach us directly</h2>
+          <p>We support enterprise inquiries, partnership requests, and operational consulting engagements.</p>
+          <div class="contact-list">
+            <p><strong>Email:</strong> contact@skychainenterprise.com</p>
+            <p><strong>Phone:</strong> +1 (555) 812-4021</p>
+            <p><strong>Office:</strong> 1800 Meridian Avenue, New York, NY</p>
+            <p><strong>Hours:</strong> Monday to Friday, 9:00 AM to 6:00 PM</p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-grid">
+            <label>
+              Full Name
+              <input type="text" name="name" placeholder="Your full name" required>
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+          </div>
+          <label>
+            Company
+            <input type="text" name="company" placeholder="Company name" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="6" placeholder="Tell us about your project or inquiry" required></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Send Message</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <h3>Sky Chain Enterprise</h3>
+        <p>Professional supply chain and logistics solutions for modern businesses.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-

@@ -1,59 +1,104 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Sky Chain Enterprise</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Learn about Sky Chain Enterprise, our mission, values, and the way we help businesses build stronger supply chains.">
+  <title>Sky Chain Enterprise | About Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header" id="navbar">
-  <div class="container nav-container">
-    <h1 class="logo">Sky Chain</h1>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav id="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="team.html">Team</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero-section">
-  <div class="overlay">
-    <h2>About Our Company</h2>
-    <p>Driving innovation and connecting businesses globally.</p>
-  </div>
-</section>
-
-<section class="container reveal">
-  <h2>Who We Are</h2>
-  <p>
-    Sky Chain Enterprise is a forward-thinking company focused on global logistics,
-    consulting, and business expansion. We help organizations grow by connecting
-    them to new markets, innovative strategies, and reliable supply chain solutions.
-  </p>
-</section>
-
-<section class="services container reveal">
-  <h2>Our Mission & Vision</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Mission</h3>
-      <p>Deliver reliable, innovative, and scalable business solutions worldwide.</p>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">SC</span>
+        <span class="brand-text">
+          <strong>Sky Chain</strong>
+          <span>Enterprise</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About Us</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <div class="card">
-      <h3>Vision</h3>
-      <p>To become a global leader in logistics and business consulting.</p>
-    </div>
-  </div>
-</section>
+  </header>
 
-<footer>
-  <p>© 2026 Sky Chain Enterprise</p>
-</footer>
-<script src="script.js"></script>
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">About us</p>
+        <h1>We help enterprises turn supply chain complexity into competitive strength.</h1>
+        <p class="lead">Sky Chain Enterprise combines strategic consulting, delivery management, and technology coordination to support reliable growth.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card-grid">
+        <article class="feature-card">
+          <h3>Our Mission</h3>
+          <p>To build responsive, transparent, and scalable logistics ecosystems that empower businesses to serve customers with confidence.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Our Vision</h3>
+          <p>To become the trusted enterprise partner for modern supply chain transformation across local and global markets.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Our Approach</h3>
+          <p>We listen carefully, design practical systems, and stay engaged through execution to deliver durable operational results.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container split-grid">
+        <div>
+          <p class="eyebrow">Our values</p>
+          <h2>Principles that guide every engagement.</h2>
+        </div>
+        <div class="bullet-panels">
+          <article class="bullet-panel">
+            <h3>Integrity</h3>
+            <p>We communicate clearly, report honestly, and act as a dependable extension of your leadership team.</p>
+          </article>
+          <article class="bullet-panel">
+            <h3>Precision</h3>
+            <p>Every workflow, metric, and milestone is handled with care to reduce risk and improve performance.</p>
+          </article>
+          <article class="bullet-panel">
+            <h3>Partnership</h3>
+            <p>We believe great outcomes come from shared responsibility, practical collaboration, and steady follow-through.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <h3>Sky Chain Enterprise</h3>
+        <p>Professional supply chain and logistics solutions for modern businesses.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-

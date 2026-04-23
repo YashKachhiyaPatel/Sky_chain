@@ -1,57 +1,93 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team - Sky Chain Enterprise</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Meet the leadership team at Sky Chain Enterprise.">
+  <title>Sky Chain Enterprise | Team</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header" id="navbar">
-  <div class="container nav-container">
-    <h1 class="logo">Sky Chain</h1>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav id="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="team.html">Team</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero-section">
-  <div class="overlay">
-    <h2>Meet Our Team</h2>
-    <p>Dedicated professionals driving success.</p>
-  </div>
-</section>
-
-<section class="services container reveal">
-  <h2>Leadership Team</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="https://randomuser.me/api/portraits/men/32.jpg" style="width:100px;border-radius:50%;">
-      <h3>John Smith</h3>
-      <p>Chief Executive Officer</p>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">SC</span>
+        <span class="brand-text">
+          <strong>Sky Chain</strong>
+          <span>Enterprise</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a class="active" href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <div class="card">
-      <img src="https://randomuser.me/api/portraits/women/44.jpg" style="width:100px;border-radius:50%;">
-      <h3>Sarah Johnson</h3>
-      <p>Operations Manager</p>
-    </div>
-    <div class="card">
-      <img src="https://randomuser.me/api/portraits/men/45.jpg" style="width:100px;border-radius:50%;">
-      <h3>David Lee</h3>
-      <p>Business Consultant</p>
-    </div>
-  </div>
-</section>
+  </header>
 
-<footer>
-  <p>© 2026 Sky Chain Enterprise</p>
-</footer>
-<script src="script.js"></script>
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Leadership</p>
+        <h1>The team behind Sky Chain Enterprise.</h1>
+        <p class="lead">Our people bring together operations expertise, strategic planning, and client-focused delivery.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container team-grid">
+        <article class="team-card">
+          <div class="avatar">AN</div>
+          <h3>Amara Nwosu</h3>
+          <p class="role">Chief Executive Officer</p>
+          <p>Amara leads enterprise strategy and oversees major transformation partnerships across global logistics programs.</p>
+        </article>
+        <article class="team-card">
+          <div class="avatar">JT</div>
+          <h3>Jonas Trent</h3>
+          <p class="role">Director of Operations</p>
+          <p>Jonas drives execution excellence, network efficiency, and operational performance across multi-region delivery systems.</p>
+        </article>
+        <article class="team-card">
+          <div class="avatar">LM</div>
+          <h3>Lina Moretti</h3>
+          <p class="role">Head of Client Success</p>
+          <p>Lina ensures every engagement remains aligned to business goals, communication standards, and measurable outcomes.</p>
+        </article>
+        <article class="team-card">
+          <div class="avatar">DK</div>
+          <h3>Daniel Kim</h3>
+          <p class="role">Lead Systems Architect</p>
+          <p>Daniel connects operational data, reporting workflows, and digital platforms into practical enterprise solutions.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <h3>Sky Chain Enterprise</h3>
+        <p>Professional supply chain and logistics solutions for modern businesses.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-
