@@ -1,7 +1,7 @@
 body { margin:0; font-family:'Segoe UI',sans-serif; }
 .container { width:90%; margin:auto; }
 
-.header { position:fixed; width:100%; top:0; background:#0a2540; color:white; z-index:1000; transition:0.3s; }
+.header { position:fixed; width:100%; top:0; background:#0a2540; color:white; z-index:1000; }
 .nav-container { display:flex; justify-content:space-between; align-items:center; padding:15px 0; }
 .logo { font-size:22px; }
 nav a { color:white; margin-left:20px; text-decoration:none; }
@@ -21,11 +21,9 @@ nav a { color:white; margin-left:20px; text-decoration:none; }
 
 footer { text-align:center; padding:20px; background:#0a2540; color:white; }
 
-/* Scroll reveal */
 .reveal { opacity:0; transform:translateY(50px); transition:1s; }
 .reveal.active { opacity:1; transform:translateY(0); }
 
-/* Mobile UI */
 @media(max-width:768px){
   nav { display:none; flex-direction:column; background:#133b5c; position:absolute; top:60px; right:0; width:200px; }
   nav a { margin:10px; }
