@@ -1,32 +1,56 @@
-
+<!-- ======================= index.html ======================= -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sky Chain Enterprise - Home</title>
+  <title>Sky Chain Enterprise</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="fade-in">
-  <h1>Sky Chain Enterprise</h1>
-  <p>Connecting Opportunities Across the Globe</p>
+<header class="header" id="navbar">
+  <div class="container nav-container">
+    <h1 class="logo">Sky Chain</h1>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="team.html">Team</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<section class="hero-section">
+  <div class="overlay">
+    <h2>Global Business Solutions</h2>
+    <p>We connect innovation, logistics, and growth worldwide.</p>
+    <a href="contact.html" class="btn">Get Started</a>
+  </div>
+</section>
 
-<section class="fade-in">
-  <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" class="hero">
-  <h2>Welcome</h2>
-  <p>We provide global solutions in logistics, consulting, and business growth.</p>
+<section class="services container reveal">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Logistics</h3>
+      <p>Efficient global supply chain solutions.</p>
+    </div>
+    <div class="card">
+      <h3>Consulting</h3>
+      <p>Strategic business growth planning.</p>
+    </div>
+    <div class="card">
+      <h3>Expansion</h3>
+      <p>Helping businesses scale globally.</p>
+    </div>
+  </div>
 </section>
 
 <footer>
   <p>© 2026 Sky Chain Enterprise</p>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
+
