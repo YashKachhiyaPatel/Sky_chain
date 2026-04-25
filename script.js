@@ -8,23 +8,9 @@ if (navToggle && siteNav) {
   });
 }
 
-const form = document.querySelector("#contactForm");
-const formStatus = document.querySelector("#formStatus");
-
-if (form && formStatus) {
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const formData = new FormData(form);
-    const name = formData.get("name");
-
-    formStatus.textContent = `Thank you, ${name}. Your message has been received. Our team will contact you shortly.`;
-    form.reset();
-  });
-}
-
-const revealTargets = document.querySelectorAll(
-  ".feature-card, .bullet-panel, .team-card, .contact-panel, .contact-form, .hero-stats li, .info-panel"
-);
+document.querySelectorAll(".feature-card, .mini-card, .team-card, .contact-info, .contact-form, .stat-card, .hero-panel").forEach((element) => {
+  element.setAttribute("data-reveal", "");
+});
 
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver((entries) => {
@@ -36,12 +22,26 @@ if ("IntersectionObserver" in window) {
     });
   }, { threshold: 0.15 });
 
-  revealTargets.forEach((element) => {
-    element.setAttribute("data-reveal", "");
+  document.querySelectorAll("[data-reveal]").forEach((element) => {
     observer.observe(element);
   });
 } else {
-  revealTargets.forEach((element) => {
+  document.querySelectorAll("[data-reveal]").forEach((element) => {
     element.classList.add("revealed");
+  });
+}
+
+const contactForm = document.querySelector("#contactForm");
+const formStatus = document.querySelector("#formStatus");
+
+if (contactForm && formStatus) {
+  const params = new URLSearchParams(window.location.search);
+
+  if (params.get("sent") === "1") {
+    formStatus.textContent = "Thank you. Your message has been sent successfully.";
+  }
+
+  contactForm.addEventListener("submit", () => {
+    formStatus.textContent = "Sending your message...";
   });
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Sky Chain Enterprise to discuss logistics, supply chain, and operational transformation services.">
+  <meta name="description" content="Contact Sky Chain Enterprise for business logistics, supply chain, and operations support.">
   <title>Sky Chain Enterprise | Contact</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,18 +13,20 @@
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Sky Chain Enterprise home">
         <span class="brand-mark">SC</span>
         <span class="brand-text">
           <strong>Sky Chain</strong>
           <span>Enterprise</span>
         </span>
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
         <span></span>
         <span></span>
         <span></span>
       </button>
+
       <nav class="site-nav" id="site-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -37,45 +39,63 @@
   <main>
     <section class="page-hero">
       <div class="container narrow">
-        <p class="eyebrow">Contact</p>
-        <h1>Let’s discuss your next logistics or operations project.</h1>
-        <p class="lead">Send us a message and we’ll follow up with the right team to support your business goals.</p>
+        <p class="eyebrow">Contact Us</p>
+        <h1>Let’s talk about your next business project.</h1>
+        <p class="lead">
+          Use the form below to contact Sky Chain Enterprise. Form submissions are configured to send directly
+          to your personal email address.
+        </p>
       </div>
     </section>
 
     <section class="section">
       <div class="container contact-grid">
-        <div class="contact-panel">
-          <h2>Reach us directly</h2>
-          <p>We support enterprise inquiries, partnership requests, and operational consulting engagements.</p>
+        <div class="card contact-info">
+          <h2>Business Contact</h2>
+          <p>We support enterprise inquiries, partnerships, and project-based logistics consulting.</p>
           <div class="contact-list">
-            <p><strong>Email:</strong> contact@skychainenterprise.com</p>
+            <p><strong>Email:</strong> ykachhiyapatel@gmail.com</p>
             <p><strong>Phone:</strong> +1 (555) 812-4021</p>
-            <p><strong>Office:</strong> 1800 Meridian Avenue, New York, NY</p>
+            <p><strong>Address:</strong> 1800 Meridian Avenue, New York, NY</p>
             <p><strong>Hours:</strong> Monday to Friday, 9:00 AM to 6:00 PM</p>
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm">
+        <form class="card contact-form" id="contactForm" action="https://formsubmit.co/ykachhiyapatel@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Sky Chain Enterprise contact request">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="contact.html?sent=1">
+
           <div class="form-grid">
             <label>
               Full Name
               <input type="text" name="name" placeholder="Your full name" required>
             </label>
+
             <label>
               Email Address
               <input type="email" name="email" placeholder="you@example.com" required>
             </label>
           </div>
+
           <label>
             Company
-            <input type="text" name="company" placeholder="Company name" required>
+            <input type="text" name="company" placeholder="Your company name" required>
           </label>
+
+          <label>
+            Subject
+            <input type="text" name="subject" placeholder="Project, service, or partnership inquiry" required>
+          </label>
+
           <label>
             Message
-            <textarea name="message" rows="6" placeholder="Tell us about your project or inquiry" required></textarea>
+            <textarea name="message" rows="6" placeholder="Tell us how we can help" required></textarea>
           </label>
+
           <button class="button button-primary" type="submit">Send Message</button>
+          <p class="form-note">Submissions from this page will be delivered to ykachhiyapatel@gmail.com after FormSubmit activation.</p>
           <p class="form-status" id="formStatus" aria-live="polite"></p>
         </form>
       </div>
@@ -86,14 +106,14 @@
     <div class="container footer-wrap">
       <div>
         <h3>Sky Chain Enterprise</h3>
-        <p>Professional supply chain and logistics solutions for modern businesses.</p>
+        <p>Professional supply chain, logistics, and enterprise operations support.</p>
       </div>
-      <div class="footer-links">
+      <nav class="footer-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="team.html">Team</a>
         <a href="contact.html">Contact</a>
-      </div>
+      </nav>
     </div>
   </footer>
 
